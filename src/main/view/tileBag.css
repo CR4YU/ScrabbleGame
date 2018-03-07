@@ -1,0 +1,19 @@
+.tileHBox {
+
+}
+
+.tileLabel {
+    -fx-min-height: 40;
+    -fx-min-width: 40;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center;
+    -fx-background-radius: 4;
+}
+
+.tileCountLabel {
+    -fx-font-size: 1em;
+    -fx-min-height: 40;
+    -fx-min-width: 20;
+    -fx-alignment: center;
+}

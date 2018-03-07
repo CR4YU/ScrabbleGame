@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ProgressBar?>
+<BorderPane fx:id="gameBorderPane" stylesheets="@solver.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.SolverController">
+    <top>
+        <HBox spacing="400" BorderPane.alignment="CENTER">
+            <Button fx:id="backToMenuButton" onAction="#backToMenu" text="←" />
+        </HBox>
+    </top>
+    <left>
+        <VBox fx:id="leftVBox" alignment="CENTER" spacing="30">
+            <GridPane fx:id="allLettersGridPane" hgap="10.0" vgap="10.0">
+
+            </GridPane>
+            <Button fx:id="clearBoardButton" text="Clear board" onAction="#clearBoard"/>
+            <Button fx:id="solveButton" text="Solve" onAction="#solve" />
+            <ProgressBar fx:id="progressBar" prefHeight="10.0" prefWidth="200.0" progress="0.0" />
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="70.0" top="20.0" />
+         </BorderPane.margin>
+        </VBox>
+
+    </left>
+    <center>
+        <VBox alignment="CENTER" spacing="20" BorderPane.alignment="CENTER">
+            <GridPane fx:id="mainGameBoardGridPane" alignment="center" hgap="5.0" vgap="5.0">
+
+            </GridPane>
+            <Label fx:id="feedbackLabel" alignment="center" text="Fill board and rack with tiles" />
+            <HBox fx:id="rackHBox" alignment="CENTER" spacing="20">
+
+
+            </HBox>
+            
+        </VBox>
+
+
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="20.0" />
+            </BorderPane.margin></HBox>
+    </bottom>
+</BorderPane>

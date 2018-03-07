@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+<config>
+	<game_version>Scrabble 15x15</game_version>
+	<dictionary>data_files/words.txt</dictionary>
+	<bot_time>2</bot_time>
+</config>
+</configs>

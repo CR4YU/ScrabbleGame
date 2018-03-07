@@ -1,0 +1,68 @@
+* {
+    -fx-font-family: "Consolas";
+
+}
+
+.label {
+    -fx-font-size: 20;
+}
+
+#settingsLabel {
+    -fx-font-size: 4em;
+    -fx-min-width: 800;
+    -fx-min-height: 50;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+#backToMenuButton {
+    -fx-font-size: 3em;
+    -fx-min-width: 70;
+    -fx-min-height: 30;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+}
+
+#backToMenuButton:hover {
+    -fx-background-color: darkslategray;
+}
+
+.optionsButton:hover {
+    -fx-background-color: darkslategray;
+}
+
+.infoLabel {
+    -fx-text-fill: green;
+}
+#dictionaryFileLabel:hover {
+    -fx-background-color: lightgray;
+}
+
+#botTimeScaleSpinner {
+    -fx-background-radius: 0;
+    -fx-font-size: 20;
+}
+
+.optionsButton {
+    -fx-font-size: 2em;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-min-width: 200;
+    -fx-alignment: center;
+}
+
+#settingsBorderPane {
+    -fx-background-color: white;
+    -fx-min-width: 1200;
+    -fx-min-height: 800;
+}
+
+#gameVersionChoiceBox {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-border-width: 2;
+    -fx-border-color: lightgrey;
+}

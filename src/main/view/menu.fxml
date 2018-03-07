@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainMenuBorderPane" stylesheets="@menu.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.MenuController">
+    <top>
+
+    </top>
+    <center>
+        <HBox alignment="center" spacing="100.0" BorderPane.alignment="CENTER">
+            <VBox fx:id="singlePlayerFieldVBox" alignment="center" onMouseClicked="#startNewGame" spacing="20.0" styleClass="menuItem">
+                <ImageView>
+               <image>
+                  <Image url="@../../images/vscpu2.png" />
+               </image></ImageView>
+                <Label text="1 Player" />
+            </VBox>
+            <VBox fx:id="multiPlayerFieldVBox" alignment="center" onMouseClicked="#startNewGame" spacing="20.0" styleClass="menuItem">
+                <ImageView>
+                    <image>
+                        <Image url="@../../images/pvp2.png" />
+                    </image></ImageView>
+                <Label text="Multi Player" />
+            </VBox>
+            <VBox fx:id="cpuMoveFieldVBox" alignment="center" onMouseClicked="#startNewGame" spacing="20.0" styleClass="menuItem">
+                <ImageView>
+                    <image>
+                        <Image url="@../../images/cpumove.png" />
+                    </image></ImageView>
+                <Label text="Solver" />
+            </VBox>
+            <VBox fx:id="settingsFieldVBox" alignment="center" onMouseClicked="#openSettingsWindow" spacing="20.0" styleClass="menuItem">
+                <ImageView>
+                    <image>
+                        <Image url="@../../images/settings.png" />
+                    </image></ImageView>
+                <Label text="Settings" />
+            </VBox>
+         <BorderPane.margin>
+            <Insets left="40.0" right="40.0" />
+         </BorderPane.margin>
+        </HBox>
+    </center>
+
+
+</BorderPane>

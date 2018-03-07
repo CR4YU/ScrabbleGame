@@ -1,0 +1,7 @@
+#gridPane {
+    -fx-background-image: url("../../images/back2.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: fixed;
+    -fx-background-position: center center;
+}

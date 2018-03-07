@@ -1,0 +1,156 @@
+* {
+    -fx-font-family: "Consolas";
+}
+#gameBorderPane {
+    -fx-background-color: white;
+    -fx-min-width: 1200;
+    -fx-min-height: 800;
+}
+
+#rackHBox {
+    -fx-min-width: 100;
+    -fx-min-height: 42;
+    -fx-pref-width: 100;
+    -fx-max-height: 42;
+    -fx-max-width: 450;
+    -fx-border-width: 2;
+    -fx-border-color: lightgrey;
+}
+
+.playerHBox {
+    -fx-font-size: 20;
+    -fx-max-width: 200;
+    -fx-min-width: 250;
+
+}
+
+#gameHistoryTextArea {
+    -fx-max-width: 200;
+    -fx-min-width: 250;
+    -fx-background-radius: 0;
+    -fx-font-size: 12;
+}
+
+#leftVBox {
+    -fx-start-margin: 30;
+    -fx-max-width: 200;
+    -fx-min-width: 250;
+}
+
+#feedbackLabel {
+    -fx-font-size: 2em;
+}
+
+#currentPlayerLabel {
+    -fx-font-size: 30;
+}
+
+.mainGameBoardLabel {
+    -fx-min-height: 40;
+    -fx-min-width: 40;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.5em;
+    -fx-alignment: center;
+    -fx-background-radius: 0;
+}
+
+
+#gameHistoryLabel {
+    -fx-font-size: 2em;
+    -fx-min-width: 250;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+#backToMenuButton {
+    -fx-font-size: 3em;
+    -fx-min-width: 70;
+    -fx-min-height: 30;
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+}
+
+#backToMenuButton:hover {
+    -fx-background-color: darkslategray;
+}
+
+
+
+.nickLabel {
+    -fx-min-width: 190;
+}
+.pointsLabel {
+    -fx-text-alignment: right;
+    -fx-alignment: center-right;
+}
+
+.colorLabel {
+    -fx-min-width: 25;
+}
+
+#currentPlayerColorLabel {
+    -fx-min-width: 30;
+    -fx-min-height: 30;
+}
+
+#solveButton {
+    -fx-min-width: 250;
+    -fx-font-size: 2.6em;
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+}
+
+#clearBoardButton {
+    -fx-min-width: 250;
+    -fx-font-size: 2.6em;
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+}
+
+#solveButton:hover {
+    -fx-background-color: darkslategray;
+}
+
+#clearBoardButton:hover {
+    -fx-background-color: darkslategray;
+}
+
+
+#progressBar {
+    -fx-background-radius: 0;
+    -fx-min-height: 20;
+}
+
+#progressBar .bar {
+    -fx-background-radius: 0;
+    -fx-background-color: gray;
+}
+
+#progressBar .track {
+    -fx-background-radius: 0;
+}
+
+
+
+.tileLetterLabel {
+    -fx-font-size: 25;
+    -fx-alignment: center;
+    -fx-font-family: "Futura";
+
+}
+
+.tilePointsLabel {
+    -fx-font-size: 10;
+}
+
+.tileGridPane {
+    -fx-background-radius: 0;
+    -fx-min-height: 40;
+    -fx-min-width: 40;
+    -fx-background-color: #f2d7a9;
+}

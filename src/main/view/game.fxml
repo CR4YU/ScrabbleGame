@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="gameBorderPane" stylesheets="@game.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.NormalGameController">
+    <top>
+        <HBox spacing="400" BorderPane.alignment="CENTER">
+            <Button fx:id="backToMenuButton" onAction="#backToMenu" text="←" />
+            <HBox alignment="CENTER" spacing="10">
+                <Label fx:id="currentPlayerColorLabel">
+                    </Label>
+                <Label fx:id="currentPlayerLabel" text="Current player" />
+            <ProgressBar fx:id="progressBar" prefHeight="10.0" prefWidth="200.0" progress="0.0" />
+                
+            </HBox>
+
+
+        </HBox>
+    </top>
+    <left>
+        <VBox fx:id="leftVBox" alignment="CENTER" spacing="30" BorderPane.alignment="CENTER">
+            <VBox fx:id="playersVBox" alignment="CENTER" spacing="40">
+                <HBox alignment="CENTER" styleClass="playerHBox">
+                    <Label styleClass="colorLabel">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin></Label>
+                    <Label styleClass="nickLabel" />
+                    <Label styleClass="pointsLabel" />
+                </HBox>
+                <HBox alignment="CENTER" styleClass="playerHBox">
+                    <Label styleClass="colorLabel">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin></Label>
+                    <Label styleClass="nickLabel" />
+                    <Label styleClass="pointsLabel" />
+                </HBox>
+                <HBox alignment="CENTER" styleClass="playerHBox">
+                    <Label styleClass="colorLabel">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin></Label>
+                    <Label styleClass="nickLabel" />
+                    <Label styleClass="pointsLabel" />
+                </HBox>
+                <HBox alignment="CENTER" styleClass="playerHBox">
+                    <Label styleClass="colorLabel">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin></Label>
+                    <Label styleClass="nickLabel" />
+                    <Label styleClass="pointsLabel" />
+                </HBox>
+
+            </VBox>
+            <VBox>
+                <Label fx:id="gameHistoryLabel" text="Game History" />
+                <TextArea fx:id="gameHistoryTextArea" editable="false" />
+            </VBox>
+
+            <Button fx:id="passButton" onAction="#handlePassClicked" text="Pass" />
+            <Button fx:id="tileBagButton" onAction="#showTileBag" text="Tile bag" />
+            <Button fx:id="playButton" disable="true" onMouseClicked="#handlePlayClicked" text="PLAY" />
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="70.0" top="20.0" />
+         </BorderPane.margin>
+        </VBox>
+    </left>
+    <center>
+        <VBox alignment="CENTER" spacing="20" BorderPane.alignment="CENTER">
+            <GridPane fx:id="mainGameBoardGridPane" alignment="center" hgap="5.0" vgap="5.0">
+
+            </GridPane>
+            <Label fx:id="checkMoveFeedbackLabel" alignment="center" text="Place your tiles on board" />
+            <HBox fx:id="rackHBox" alignment="CENTER" spacing="20">
+
+
+            </HBox>
+
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+        </VBox>
+
+
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin></HBox>
+    </bottom>
+</BorderPane>

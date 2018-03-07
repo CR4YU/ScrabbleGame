@@ -1,0 +1,36 @@
+* {
+    -fx-font-family: "Consolas";
+}
+
+#finalScoresLabel {
+    -fx-alignment: center;
+    -fx-font-size: 2.7em;
+    -fx-min-width: 400;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+.pointsLabel {
+    -fx-font-size: 18;
+    -fx-min-width: 50;
+}
+
+.nickLabel {
+    -fx-font-size: 18;
+    -fx-min-width: 250;
+    -fx-max-width: 250;
+}
+
+.colorLabel {
+    -fx-min-height: 25;
+    -fx-min-width: 25;
+}
+
+#mainVBox {
+    -fx-min-width: 500;
+    -fx-min-height: 300;
+}
+
+.playerHBox {
+    -fx-min-width: 300;
+}

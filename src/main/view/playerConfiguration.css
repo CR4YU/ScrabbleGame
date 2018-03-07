@@ -1,0 +1,59 @@
+*{
+    -fx-font-family: "Consolas";
+    -fx-font-size: 18;
+
+}
+
+.botcheckbox {
+    -fx-background-radius: 0;
+}
+
+.check-box .box {
+    -fx-background-color: #d6d8df;
+    -fx-border-color: #d6d8df;
+    -fx-background-radius: 0;
+}
+
+.nickLabel {
+    -fx-background-radius: 0;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.color{
+    -fx-background-radius: 0;
+    -fx-color-label-visible: false ;
+    -fx-text-box-border: #d6d8df;
+    -fx-focus-color: #d6d8df ;
+    -fx-background-color: #d6d8df;
+}
+
+.slider .track {
+    -fx-background-color: #d6d8df;
+}
+
+.slider {
+    -fx-min-width: 200;
+}
+
+.textField {
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-text-box-border: #d6d8df;
+    -fx-focus-color: #d6d8df ;
+    -fx-background-color: #d6d8df;
+}
+
+.addButton {
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-background-color: gray;
+}
+
+.addButton:hover {
+    -fx-background-color: darkslategray;
+}
+
+.button {
+    -fx-background-radius: 0;
+}

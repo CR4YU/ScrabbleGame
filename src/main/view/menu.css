@@ -1,0 +1,22 @@
+* {
+    -fx-font-family: "Consolas";
+}
+
+#mainMenuBorderPane {
+    -fx-background-color: white;
+    -fx-min-width: 1200;
+    -fx-min-height: 800;
+}
+
+.menuItem {
+    -fx-font-size: 1.7em;
+    -fx-max-height: 180;
+    -fx-max-width: 180;
+    -fx-min-height: 180;
+    -fx-min-width: 180;
+}
+
+.menuItem:hover {
+    -fx-border-width: 2;
+    -fx-border-color: lightgrey;
+}
